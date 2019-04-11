@@ -1,2 +1,4 @@
 env
-API key.txt
+API_key.txt
+.vscode*
+.vscode/*
