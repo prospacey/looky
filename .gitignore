@@ -1,4 +1,6 @@
 env
 API_key.txt
-.vscode*
 .vscode/*
+.vscode/**.pytest*
+*__pycache__*
+*cache*
