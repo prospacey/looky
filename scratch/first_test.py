@@ -21,7 +21,4 @@ directions_result = gmaps.directions(
 
 #%%
 print(len(geocode_result))
-
-
-#%%
-directions_result
+print(directions_result)

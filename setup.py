@@ -18,7 +18,10 @@ URL = "https://github.com/prospacey/looky"
 EMAIL = "aloftus2@jhu.edu, devin.g.crowley@gmail.com"
 AUTHOR = "Alex Loftus, Devin Crowley"
 REQUIRES_PYTHON = ">=3.6.0"
-VERSION = 0.0
+VERSION = 0
+with open("API_key.txt", "r") as f:
+    API_FILE = f.readline()
+
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -49,12 +52,7 @@ except FileNotFoundError:
 
 # Load the package's __version__.py module as a dictionary.
 about = {}
-if not VERSION:
-    project_slug = NAME.lower().replace("-", "_").replace(" ", "_")
-    with open(os.path.join(here, project_slug, "__version__.py")) as f:
-        exec(f.read(), about)
-else:
-    about["__version__"] = VERSION
+about["__version__"] = VERSION
 
 
 class UploadCommand(Command):
@@ -121,7 +119,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
