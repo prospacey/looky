@@ -1,9 +1,0 @@
-{
-    "python.pythonPath": "env/bin/python",
-    "python.unitTest.pyTestArgs": [
-        "test"
-    ],
-    "python.unitTest.unittestEnabled": false,
-    "python.unitTest.nosetestsEnabled": false,
-    "python.unitTest.pyTestEnabled": true
-}
