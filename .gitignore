@@ -4,3 +4,4 @@ API_key.txt
 .vscode/**.pytest*
 *__pycache__*
 *cache*
+**.egg**
