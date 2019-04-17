@@ -1,30 +1,10 @@
-# TODO: check if max results can only be 20
-#%%
-import googlemaps
-import looky
-from datetime import datetime
-
-#%%
-# global variables
-gmaps = googlemaps.Client(key=looky.API_KEY)
-me = "3115 Dillon St, Baltimore, MD"
-dev = "2007 Portugal St, Baltimore, MD"
-#%%
-# gives information about how to get from me to dev
-_directions = gmaps.directions(me, dev)
-_directions
-
-#%%
-# prints location coordinates for my address
-_geocode = gmaps.geocode(address=me)
-_geocode
-
-#%%
-_places = gmaps.places("gas", location=me)
-_places
+""" 
+Module utils.
+Holds utility classes / functions that will be useful for us later.
+imported as a name in the global __init__. 
+"""
 
 
-# TODO
 class GeoLo:
     """ Object that holds location information. 
     Address: str
